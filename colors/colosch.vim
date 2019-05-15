@@ -14,13 +14,13 @@ if exists("syntax_on")
 endif
 let g:colors_name = "colosch"
 
-hi Normal		ctermbg=Black  ctermfg=lightgreen guibg=Black   guifg=lightgrey
+hi Normal		ctermbg=Black  ctermfg=white guibg=Black   guifg=lightgrey
 hi Comment		term=bold	   ctermfg=LightRed   guifg=#aeaeae
 hi Constant		term=underline ctermfg=LightGreen guifg=White	gui=NONE
 hi Identifier	term=underline ctermfg=LightCyan  guifg=#00ffff
 hi Ignore					   ctermfg=black	  guifg=bg
 hi PreProc		term=underline ctermfg=LightBlue  guifg=Wheat
-hi Search		term=reverse					  guifg=white	guibg=Blue
+hi Search		term=reverse   ctermfg=White	  guifg=white	guibg=Blue
 hi Special		term=bold	   ctermfg=Brown      guifg=#e28964
 hi Statement	term=bold	   ctermfg=Yellow	  guifg=#f0e68c gui=NONE
 hi Type						   ctermfg=LightGreen guifg=#0000ff	gui=none
@@ -31,8 +31,8 @@ hi Number		term=bold	   ctermfg=blue	  	  guifg=#2687cc gui=NONE
 hi Define		term=bold	   ctermfg=blue	  	  guifg=#ff99aa
 " From the source:
 hi CursorLine   term=bold      ctermfg=LightCyan  guifg=#000000  guibg=#ffffff  	 
-hi Pmenu        term=bold      ctermfg=LightCyan  guifg=#2b3b32  guibg=#839496
-hi PmenuSel     term=bold      ctermfg=LightCyan  guifg=#839496  guibg=#2b3b32
+hi Pmenu        term=bold      ctermfg=white  guifg=#2b3b32  guibg=#839496
+hi PmenuSel     term=bold      ctermfg=white guifg=#839496  guibg=#2b3b32
 hi Cursor										  guifg=#ffffff  guibg=#5faf00
 hi MatchParen                                     guifg=#2b3b32  guibg=#839496
 hi Directory	term=bold	   ctermfg=LightCyan  guifg=Cyan
@@ -49,3 +49,5 @@ hi StatusLineNC term=reverse   cterm=reverse	  gui=NONE		guifg=white guibg=#3333
 hi Title		term=bold	   ctermfg=LightMagenta gui=bold	guifg=Pink
 hi WarningMsg	term=standout  ctermfg=LightRed   guifg=Red
 hi Visual		term=reverse   cterm=reverse	  gui=NONE		guifg=white guibg=darkgreen
+hi PmenuSel  term=reverse cterm=reverse ctermfg=white ctermbg=darkcyan
+hi Pmenu  ctermfg=white ctermbg=darkcyan
